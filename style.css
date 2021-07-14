@@ -20,8 +20,14 @@ body{
     align-items: center;
     grid-column-gap: 102px; 
 }
-.bannder-datil h1{
-   font-weight: 700;
+.banner-datil h1 {
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 30px;
+ 
+}
+.banner:hover .banner-img img {
+  transform: rotate(380deg) scale(1.2);
 }
  .btn {
     font-size: 16px;
@@ -34,19 +40,23 @@ body{
 }
 .banner-datil i{
     margin: 5px;
+
 }
 .banner-img img{
     Width: 556.01px;
     Height: 438px;
   transition: 500ms ease-in;
 }
-.banner-img img:hover{
+/* .banner-img img:hover{
     transform: rotate(380deg) scale(1.2);
 
-}
+} */
 .banner-img{
   padding-top: 153px;
   padding-bottom: 88px;
+}
+span{
+  color: orange;
 }
 /*--------------------------------------
    main start
@@ -77,7 +87,14 @@ main{
     margin: 10px;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
+    transition: all 500ms ease-in-out;
 }
+.players:hover{
+  transform: scale(1.1);
+  border: 1px solid ;
+  box-shadow: 2px 2px 3px ;
+}
+
 /* ------------------------
     table style start
   ------------------------------  */
@@ -162,6 +179,8 @@ main{
   /*-----------------------
    table style ended 
    ----------------------- */
+   /*====================
+    easy match start */
 .grop{
     margin-left: 4%;
 }
@@ -180,6 +199,18 @@ main{
    font-weight: 700;
    line-height: 1em;
 }
+.bttn{
+  font-size: 16px;
+  color: #FFFFFF;
+  background-color: #8a1857;
+  border: 0;
+  padding: 5px 23px;
+  margin-top: 10px;
+ display: block;
+}
+
+   /*====================
+    easy match end */
 
 /*-----------------------
             match start
@@ -278,6 +309,10 @@ footer .icon{
   }
   footer img{
       width: 200px;
+      transition: 500ms ease-in;
+  }
+  footer img:hover{
+    transform: scale(1.5);
   }
 
 }
